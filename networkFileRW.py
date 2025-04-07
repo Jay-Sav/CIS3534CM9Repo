@@ -5,13 +5,18 @@
 #Update routers and switches;
 #read equipment from a file, write updates & errors to file
 
-##---->>>> Use a try/except clause to import the JSON module
+try:
+    import json
+except:
+    print('ERROR:Failed to import JSON module')
 
 
 
-##---->>>> Create file constants for the file names; file constants can be reused
-##         There are 2 files to read this program: equip_r.txt and equip_s.txt
-##         There are 2 files to write in this program: updated.txt and errors.txt
+file_1 = "equip_r.txt"
+file_2 = "equip_s.txt"
+
+update_file = "updated.txt"
+error_file = "errors.txt"
       
 
 
@@ -60,6 +65,7 @@ def getValidIP(invalidIPCount, invalidIPAddresses):
 def main():
 
     ##---->>>> open files here
+    
 
 
 
